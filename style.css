@@ -1,0 +1,62 @@
+body{
+    background: linear-gradient(90deg, #5d49b9 0%, #bbd4af 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.title{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+.title-span{
+    font-size: 25px;
+    margin-left: 15%;
+    color: #dd1a00;
+}
+#file1{
+ align-self: center;
+ justify-self: center;
+ width: 300px; 
+ height: px;
+ border: 2px solid ;/* Adjust the width as needed */
+ padding: 20px;;
+ border-radius: 5px;
+}
+#title1{
+    float: left;
+    color: black;
+    font-size: 30px;
+}
+#file2{
+    align-self: center;
+    justify-self: center;
+    width: 300px; 
+    height: px;
+    border: 2px solid ;/* Adjust the width as needed */
+    padding: 20px;;
+    border-radius: 5px;
+   }
+   #title2{
+       float: left;
+       color: black;
+       font-size: 30px;
+   }
+#button{
+    width: 200px;
+    height: 70px;
+    border-radius: 15px;
+    border: none;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #dd1a00;
+}
+
+#plagiarismResult{
+    font-size: 30px;
+    font-weight: w.700;
+    color: white;
+}
