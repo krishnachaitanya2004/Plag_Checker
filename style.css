@@ -52,10 +52,11 @@ body{
     font-size: 20px;
     font-weight: bold;
     background-color: #dd1a00;
+    cursor: pointer;
 }
 
 #plagiarismResult{
-    font-size: 10px;
+    font-size: 18px;
     font-weight: w.700;
     color: white;
 }

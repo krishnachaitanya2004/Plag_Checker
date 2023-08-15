@@ -2,6 +2,19 @@ document.getElementById("button").addEventListener('click', function() {
     var input1 = document.getElementById("file1").files[0];
     var input2 = document.getElementById("file2").files[0];
 
+    if (!input1 || !input2) {
+        alert("Please upload both files");
+        return;
+    }
+    const allowedExtensions = ['.txt', '.js', '.cpp', '.py', '.java', '.css', '.html'];
+    const file1Ext = file1.name.substring(file1.name.lastIndexOf('.'));
+    const file2Ext = file2.name.substring(file2.name.lastIndexOf('.'));
+
+    if (!allowedExtensions.includes(file1Ext) || !allowedExtensions.includes(file2Ext)) {
+        alert('Invalid file type. Only .txt, .js, .cpp, .py, .java, .css, .html are allowed.');
+        return;
+    }
+
     var reader1 = new FileReader();
     var reader2 = new FileReader();
 reader1.readAsText(input1);
