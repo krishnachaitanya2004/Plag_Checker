@@ -7,8 +7,8 @@ document.getElementById("button").addEventListener('click', function() {
         return;
     }
     const allowedExtensions = ['.txt', '.js', '.cpp', '.py', '.java', '.css', '.html'];
-    const file1Ext = file1.name.substring(file1.name.lastIndexOf('.'));
-    const file2Ext = file2.name.substring(file2.name.lastIndexOf('.'));
+    const file1Ext = input1.name.substring(file1.name.lastIndexOf('.'));
+    const file2Ext = input2.name.substring(file2.name.lastIndexOf('.'));
 
     if (!allowedExtensions.includes(file1Ext) || !allowedExtensions.includes(file2Ext)) {
         alert('Invalid file type. Only .txt, .js, .cpp, .py, .java, .css, .html are allowed.');
